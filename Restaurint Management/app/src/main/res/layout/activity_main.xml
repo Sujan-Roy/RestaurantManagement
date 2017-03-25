@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/back4"
+    tools:context="com.example.spuzzal.loginreg.MainActivity">
+
+    <TextView
+        android:id="@+id/registerTv"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Registration "/>
+    <TextView
+        android:id="@+id/emilTv"
+        android:layout_below="@+id/registerTv"
+        android:text="E-mail"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/emilEt"
+        android:layout_below="@+id/emilTv"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorRed"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/passwordTv"
+        android:text="Password"
+        android:textSize="20dp"
+        android:layout_below="@+id/emilEt"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorAccent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/passwordEt"
+        android:inputType="numberPassword"
+        android:layout_below="@+id/passwordTv"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorRed"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="Register"
+        android:layout_below="@+id/passwordEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerBtn"/>
+    <TextView
+        android:id="@+id/textwe"
+        android:layout_below="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@id/textwe"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textRegister"
+        android:text="Already Registered "/>
+    <TextView
+        android:id="@+id/signTv"
+        android:layout_below="@+id/textwe"
+        android:layout_toRightOf="@+id/textRegister"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in  Here"/>
+
+</RelativeLayout>
