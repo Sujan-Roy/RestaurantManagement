@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_food_list"
     android:layout_width="match_parent"
@@ -8,21 +8,26 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
-    android:background="@drawable/back8"
     tools:context="com.example.spuzzal.loginreg.Food.FoodList">
-    <Button
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/imageFood"
+        android:layout_width="1600dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_launcher"/>
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_below="@+id/imageFood"
+        android:layout_width="wrap_content"
+        android:text="Food Name"
+        android:textSize="20dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Order"
-        android:id="@+id/orderBtn"/>
-    <ListView
+        android:layout_below="@+id/nameTv"
+        android:text="Price"
+        android:textSize="18dp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/priceTv"/>
 
-        android:id="@+id/foodlist"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </ListView>
-
-
-</LinearLayout>
+</RelativeLayout>
