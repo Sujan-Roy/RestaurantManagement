@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                            finish();
                             //start the new intent
-                            Intent intent3= new Intent(MainActivity.this,FoodList.class);
+                            Intent intent3= new Intent(MainActivity.this,FoodMainActivity.class);
                             startActivity(intent3);
                             Toast.makeText(MainActivity.this, "Succesfully Register", Toast.LENGTH_SHORT).show();
 
