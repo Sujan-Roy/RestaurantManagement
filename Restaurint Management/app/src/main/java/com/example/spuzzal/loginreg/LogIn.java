@@ -90,7 +90,7 @@ public class LogIn extends AppCompatActivity implements View.OnClickListener{
                         if(task.isSuccessful()){
                             finish();
                             //start the new intent
-                            Intent intent2= new Intent(getApplicationContext(),FoodList.class);
+                            Intent intent2= new Intent(getApplicationContext(),FoodMainActivity.class);
                             startActivity(intent2);
                         }
                     }
