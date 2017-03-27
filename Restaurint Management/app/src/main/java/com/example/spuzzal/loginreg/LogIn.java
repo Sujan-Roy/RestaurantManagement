@@ -35,7 +35,7 @@ public class LogIn extends AppCompatActivity implements View.OnClickListener{
         if(firebaseAuth.getCurrentUser() !=null){
             finish();
             //start the new intent
-            Intent intent3= new Intent(getApplicationContext(),FoodList.class);
+            Intent intent3= new Intent(getApplicationContext(),FoodMainActivity.class);
             startActivity(intent3);
         }
 
